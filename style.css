@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.screen{
+    height: 100vh;
+}
+
+.header{
+    height: 250px;
+    margin: 0%;
+    text-align: center;
+    background-color:rgba(60, 136, 187, 0.438)  
+}
+
+.container {
+    display: flex;
+    height: 250px;
+}
+.container > div {
+    flex: 1; 
+  }
+
+  .divlado1{
+      background-color: rgba(209, 128, 46, 0.377);
+  }
+  .divlado2{
+      background-color: rgba(63, 50, 150, 0.322);
+  }
+  .divlado3{
+      background-color: rgba(255, 0, 0, 0.39);
+  }
+
+  .signup{
+      height: 100px;
+      text-align: center;
+      background-color: rgba(104, 200, 238, 0.253);
+  }
+
+  .content{
+    height: 350px;
+    text-align: center;
+     background-color: aliceblue; 
+  }
+
+  .topo{
+      height: 30px;
+      background-color: rgba(28, 53, 136, 0.616);
+  }
+
+  .center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  @media screen and (max-width:600px) {
+    .container{
+        display: grid;
+    }
+    .ordem{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        order: -2; 
+        height: 200px;
+    }
+    .signup{
+        order: -1;
+    }
+
+    .header{
+        height: 130px;
+    }
+
+    .mudar1{
+        order: -2;
+    }
+    .mudar2{
+        order: -1;
+    }
+    .mudar3{
+        order: -3;
+    }
+
+
+
+
+ }
+
